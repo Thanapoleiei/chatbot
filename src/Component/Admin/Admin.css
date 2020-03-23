@@ -1,0 +1,340 @@
+.mainlogin {
+  background-image: url("../../Image/psu.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.admin {
+  color: rgb(14, 86, 119);
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.navbarAdmin {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 1px 0.5px rgba(0, 0, 0, 0.2);
+}
+.formLogin {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 350px;
+  margin-top: 100px;
+  margin-bottom: 110px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 8px rgba(0, 0, 0, 0.2);
+}
+.formSignup {
+  background-color: #f2f7fb;
+  padding: 30px;
+  width: 350px;
+  margin-top: 30px;
+  margin-bottom: 110px;
+  border-radius: 20px;
+}
+.formReset {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 350px;
+  margin-top: 100px;
+  margin-bottom: 110px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 8px rgba(0, 0, 0, 0.2);
+}
+.bt-sigin {
+  margin-top: 20px;
+  width: 280px;
+  height: 45px;
+}
+.bt-sigup {
+  width: 280px;
+  height: 45px;
+}
+.signup-text {
+  color: #b4041c;
+  float: right;
+  font-weight: bolder;
+}
+.signup-text:hover {
+  cursor: pointer;
+  color: #d65b6b;
+}
+.login {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+input[type="email"],
+input[type="password"] {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 8px;
+  width: 280px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 17px;
+  transition: 0.5s ease;
+}
+.ipSignup {
+  background-color: #f2f7fb;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 8px;
+  width: 280px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 17px;
+  transition: 0.5s ease;
+}
+.btn-secondary {
+  font-size: 20px !important;
+  width: 280px;
+  height: 50px;
+  background-color: #034f84 !important;
+  border: none !important;
+  margin-top: 20px;
+}
+.btn-secondary:hover {
+  background-color: #236ab9 !important;
+}
+.help1 {
+  color: #da0b0b;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 60px;
+}
+.help2 {
+  color: #da0b0b;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-bottom: 15px !important;
+}
+.drop {
+  color: rgba(255, 255, 255);
+}
+.drop:focus {
+  color: #cacaca !important;
+}
+.drop:hover {
+  color: #cacaca !important;
+}
+.text-drop {
+  font-size: 18px;
+  font-weight: bold !important;
+  width: 220px !important;
+}
+.text-drop2 {
+  font-size: 13px;
+  font-weight: bold !important;
+}
+.Sp1 {
+  width: 40px;
+  height: 40px;
+  margin-top: 150px;
+  margin-left: 400px;
+}
+.textHis {
+  font-size: 20px;
+}
+.text-message {
+  font-size: 15px;
+}
+.text-agent a {
+  color: #07c7f7;
+  word-break: break-word;
+  font-weight: 600 !important;
+}
+.text-agent a:hover {
+  color: #0753f7;
+  font-weight: 600 !important;
+  text-decoration-line: none;
+}
+.text-Table {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 900px;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid #bdbdbd;
+}
+.textDate {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+.text-cont-pageadmin1 {
+  margin-top: 30px;
+}
+.adminRow1 {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.spin {
+  margin-left: auto;
+  margin-right: auto;
+}
+.load-item {
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+.ic-updown {
+  margin-left: 900px;
+}
+.textload {
+  color: rgb(2, 41, 78);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ffccff 50%, #33ccff 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  input[type="email"],
+  input[type="password"] {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .bt-sigin {
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+  }
+  .bt-sigup {
+    width: 250px;
+    height: 40px;
+  }
+  .ipSignup {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .admin {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .signup-text {
+    font-size: 12px;
+  }
+  .help1 {
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 5px !important;
+  }
+  .help2 {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .formLogin {
+    padding: 25px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 170px;
+    border-radius: 10px;
+  }
+  .formSignup {
+    padding: 25px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 170px;
+    border-radius: 10px;
+  }
+  .formReset {
+    padding: 25px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 170px;
+    border-radius: 10px;
+  }
+  .btn-secondary {
+    font-size: 12px !important;
+    width: 200px;
+    height: 40px;
+    padding: 0px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .text-drop {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 180px !important;
+  }
+  .text-cont-pageadmin1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .textDate {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  .alert {
+    margin-bottom: 5px !important;
+    padding: 5px !important;
+  }
+  .text-Table {
+    width: 300px;
+    padding: 5px 5px;
+  }
+  .textDate {
+    font-weight: bolder;
+    margin-bottom: 15px;
+  }
+  .textHis {
+    font-size: 12px;
+  }
+  .text-message {
+    font-size: 8px;
+  }
+  .spin {
+    margin-top: 200px;
+  }
+  .textload {
+    font-size: 15px;
+  }
+  .ic-updown {
+    margin-left: 280px;
+  }
+}

@@ -1,0 +1,212 @@
+.main {
+  background-image: url("../../Image/student.jpg");
+  background-size: cover;
+}
+.about {
+  background-color: rgba(255, 255, 255, 0);
+}
+.contact {
+  background-color: rgba(255, 255, 255, 0);
+}
+.article-1 {
+  padding: 10px;
+  box-shadow: inset 1px 2000px rgba(255, 253, 253, 0.856);
+  height: 850px;
+  margin-bottom: 100px;
+}
+.article-2 {
+  text-align: center;
+  padding: 10px;
+  box-shadow: inset 1px 2000px rgba(255, 255, 255, 0.911);
+  height: 850px;
+}
+.title {
+  margin-top: 80px;
+  background-image: url("../../Image/sritrung.jpg");
+  background-size: cover;
+  box-shadow: inset 1px 2000px rgba(6, 8, 100, 0.436);
+  height: 550px;
+  opacity: 0.9;
+  background-size: cover;
+}
+.textXen {
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.textXen span {
+  display: block;
+}
+.centered1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bolder;
+}
+.centered2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.text-course {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+.text-second {
+  color: #0b62cc !important;
+  font-size: 14px !important;
+  font-weight: bold;
+  margin: 0px;
+  padding-left: 15px;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+.text-second:hover {
+  color: red !important;
+  text-decoration-line: none;
+}
+.text-p {
+  margin: 0px;
+}
+.text-cont-about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.text-cont-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.comming {
+  font-size: 50px;
+  font-weight: bolder;
+  color: lightseagreen;
+  text-align: center;
+}
+.qr {
+  margin-top: 20px;
+}
+.text-qr {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-bottom: 35px;
+}
+.pic-qr {
+  padding: 0 25px;
+}
+.i-line {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+}
+.qr-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+.facuty-img {
+  width: 600px;
+  margin-top: 20px;
+}
+.pic-main {
+  margin-top: 30px;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(9, 56, 109);
+  background-color: #ffffff;
+  text-align: center;
+}
+.text-footer {
+  padding: 60px;
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    margin-top: 3px;
+    height: 200px;
+  }
+  .centered1 {
+    color: #f8f9fa;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .centered2 {
+    font-size: 5px;
+  }
+  .lefted {
+    top: 5%;
+    font-size: 5px;
+  }
+  .content {
+    margin-top: 30px;
+  }
+  .title {
+    padding: 40px;
+  }
+  .article-1 {
+    margin-bottom: 0px;
+    height: 450px;
+  }
+  .article-2 {
+    height: 450px;
+  }
+  .text-course {
+    font-size: 8px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .text-faculty {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  .text-second {
+    font-size: 5px !important;
+    font-weight: 100;
+    padding-left: 5px;
+  }
+  .text-link-content {
+    font-size: 5px;
+    font-weight: 100;
+    padding-left: 5px;
+  }
+  .comming {
+    font-size: 8px;
+  }
+  .footer {
+    font-size: 8px;
+    padding: 35px;
+  }
+  .qr {
+    margin-top: 0px;
+  }
+  .text-qr {
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  .pic-qr {
+    padding: 0px;
+  }
+  .i-line {
+    margin-left: 2px;
+    width: 15px;
+    height: 15px;
+  }
+  .qr-img {
+    width: 90px;
+  }
+  .facuty-img {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .pic-main {
+    margin-top: 15px;
+  }
+}

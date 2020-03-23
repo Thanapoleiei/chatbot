@@ -1,0 +1,56 @@
+.bgnavbar {
+  box-shadow: inset 1px 2000px 200px rgba(255, 253, 253, 0.616);
+}
+.text-nav {
+  font-size: 20px !important;
+  font-weight: bold;
+  padding: 10px 20px !important;
+}
+.text-nav:hover {
+  color: lightseagreen !important;
+}
+.text-pkt {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  color: rgb(29, 128, 158);
+  padding-left: 5px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.text-pu {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(10, 66, 151);
+  padding-right: 3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.text-s {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(23, 109, 206);
+  padding-right: 3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-pu {
+    padding-right: 2px;
+    font-size: 20px;
+  }
+  .text-s {
+    padding-right: 2px;
+    font-size: 20px;
+  }
+  .text-pkt {
+    padding-left: 4px;
+    font-size: 20px;
+  }
+  .text-nav {
+    font-size: 15px !important;
+  }
+}

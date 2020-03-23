@@ -1,0 +1,106 @@
+.adminRow4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.formIntent {
+  padding: 30px;
+  width: 900px;
+  border-radius: 20px;
+}
+.create {
+  text-align: center;
+  font-weight: bolder;
+}
+.sizeIP1[type="text"] {
+  font-size: 15px;
+  height: 40px;
+  width: 60%;
+  padding: 20px 10px;
+}
+.sizeIP2[type="text"] {
+  font-size: 15px;
+  height: 40px;
+  width: 60%;
+  padding: 20px 10px;
+}
+.form-label {
+  text-align: start;
+  margin-left: 100px;
+}
+.bt-addremove {
+  height: 40px !important;
+  margin-left: 20px !important;
+  font-size: 20px !important;
+}
+.sizeIP1,
+.sizeIP2 {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+.bt-submit {
+  width: 55% !important;
+  height: 50px !important;
+  margin-top: 10px !important;
+  margin-left: 0px !important;
+  margin-bottom: 20px !important;
+  font-weight: bolder !important;
+  font-size: 18px !important;
+}
+.help3 {
+  color: #da0b0b;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 5px !important;
+}
+.label-text {
+  text-align: start;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+@media only screen and (max-width: 980px) {
+  .create {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .label-text {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .sizeIP1,
+  .sizeIP2 {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 70% !important;
+    height: 30px !important;
+    font-size: 12px !important;
+    padding: 0px 0px 0px 10px !important;
+  }
+  .formIntent {
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+  }
+  .form-label {
+    margin-left: 0px;
+  }
+  .bt-addremove {
+    padding: 0px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 5px !important;
+    font-size: 10px !important;
+  }
+  .bt-submit {
+    width: 100% !important;
+    height: 40px !important;
+    font-size: 12px !important;
+  }
+  .help3 {
+    font-size: 12px;
+    margin-bottom: 0px !important;
+  }
+}

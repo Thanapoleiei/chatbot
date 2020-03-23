@@ -1,0 +1,438 @@
+.textFA {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.textMG {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formDB {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.formDB:nth-child(odd) {
+  background: rgb(241, 241, 241);
+}
+.textMain1 {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  min-width: 100vh;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.textMain2 {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 900px;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.textdataDB {
+  min-width: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+.textdataDB2 {
+  padding-left: 10px !important;
+  padding: 10px;
+  font-size: 16px;
+}
+.textOne {
+  padding-top: 5px;
+  color: rgb(6, 119, 163);
+  font-weight: bold;
+}
+.textSecond {
+  padding-top: 5px;
+}
+.textCol {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.mongodb-view {
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 100vh;
+  height: 380px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.mongodb-view::-webkit-scrollbar {
+  width: 10px;
+}
+.mongodb-view::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+.mongodb-view::-webkit-scrollbar-thumb {
+  background: rgb(218, 5, 94);
+  border-radius: 10px;
+}
+.mongodb-view2 {
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  word-break: break-word;
+  -ms-overflow-style: none;
+}
+.mongodb-view2::-webkit-scrollbar {
+  width: 10px;
+}
+.mongodb-view2::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+.mongodb-view2::-webkit-scrollbar-thumb {
+  background: rgb(218, 5, 94);
+  border-radius: 10px;
+}
+.bt-back {
+  height: 60px;
+  width: 200px;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.664) !important;
+}
+.bt-back:hover {
+  background-color: rgba(75, 74, 74, 0.664) !important;
+}
+.text-cont-pageadmin2 {
+  margin-top: 30px;
+}
+.text-cont-pageadmin3 {
+  margin-top: 30px;
+}
+.adminRow2 {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.history-view2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 470px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  word-break: break-word;
+  -ms-overflow-style: none;
+}
+.history-view2::-webkit-scrollbar {
+  width: 10px;
+}
+.history-view2::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+.history-view2::-webkit-scrollbar-thumb {
+  background: rgb(218, 5, 94);
+  border-radius: 10px;
+}
+p {
+  padding: 0 !important;
+}
+.text-updown {
+  cursor: pointer;
+  font-size: 20px;
+}
+.bt-return {
+  width: 100px;
+  padding: 5px !important;
+  font-size: 20px !important;
+}
+.textDateF {
+  font-size: 15px;
+  font-weight: bold;
+}
+.boxAlert {
+  color: rgb(2, 1, 68) !important;
+  margin-top: 10px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.textFall {
+  font-size: 16px;
+}
+.timeRelative {
+  font-size: 15px;
+  text-align: right !important;
+  color: gray;
+}
+.sizeSearch {
+  padding-left: 25px !important;
+  width: 280px !important;
+  height: 45px !important;
+  border-radius: 20px !important;
+  margin-bottom: 25px !important;
+}
+.sizeIP3[type="text"] {
+  font-size: 15px;
+  height: 40px;
+  width: 60%;
+  padding: 20px 10px;
+}
+.sizeIP4[type="text"] {
+  font-size: 15px;
+  height: 40px;
+  width: 60%;
+  padding: 20px 10px;
+}
+.adminRow4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.formEdit {
+  padding: 30px;
+  width: 900px;
+  border-radius: 20px;
+}
+.form-label {
+  text-align: start;
+  margin-left: 100px;
+}
+.label-text2 {
+  text-align: start;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.sizeIP3,
+.sizeIP4 {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+.bt-addremove2 {
+  height: 40px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.bt-submitll {
+  width: 55% !important;
+  height: 50px !important;
+  margin-top: 10px !important;
+  margin-left: 0px !important;
+  margin-bottom: 20px !important;
+  font-weight: bolder !important;
+  font-size: 18px !important;
+}
+.textED {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+.btdb2 {
+  width: 150px;
+}
+@media only screen and (max-width: 1200px) {
+  .text-cont-pageadmin2 {
+    margin-top: 30px;
+  }
+  .text-cont-pageadmin3 {
+    margin-top: 30px;
+  }
+  .textFA {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .textMG {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .textOne {
+    word-break: break-all;
+    padding-left: 0px !important;
+  }
+  .textCol {
+    font-size: 10px;
+  }
+  .formDB {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .history-view2 {
+    width: 300px;
+    padding: 8px;
+    height: 450px;
+  }
+  .alert {
+    margin-top: 5px !important;
+  }
+  .textDateF {
+    font-size: 12px;
+  }
+  .boxAlert {
+    margin-top: 15px;
+    padding: 8px !important;
+  }
+  .textFall {
+    font-size: 11px;
+  }
+  .timeRelative {
+    font-size: 10px !important;
+    text-align: right !important;
+    color: gray;
+  }
+  .text-updown {
+    font-size: 16px;
+  }
+  .mongodb-view {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 280px !important;
+    height: 400px;
+  }
+  .mongodb-view2 {
+    padding: 5px 10px;
+    width: 300px;
+    height: 200px;
+  }
+  .mongodb-view::-webkit-scrollbar {
+    width: 5px;
+  }
+  .mongodb-view::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  .mongodb-view2::-webkit-scrollbar {
+    width: 5px;
+  }
+  .mongodb-view2::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  .history-view2::-webkit-scrollbar {
+    width: 5px;
+  }
+  .history-view2::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  .textdataDB {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    min-width: 280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 8px;
+  }
+  .textdataDB2 {
+    padding: 5px;
+    font-size: 8px;
+  }
+  .textConnect {
+    margin-top: 50px;
+    height: 100px !important;
+    font-size: 8px;
+  }
+  .alertConnect {
+    width: 150px !important;
+  }
+  .textMain1 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    min-width: 280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+  }
+  .textMain2 {
+    width: 300px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+  .btdb {
+    width: 18px;
+    padding: 3px !important;
+    font-size: 8px !important;
+    margin-left: 4px !important;
+    margin-bottom: 1px;
+  }
+  .btdb2 {
+    width: 40px;
+    font-size: 8px !important;
+  }
+  .bt-return {
+    width: 50px;
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
+  .sizeSearch {
+    padding-left: 10px !important;
+    width: 130px !important;
+    height: 25px !important;
+    font-size: 8px !important;
+    border-radius: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .textED {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .label-text2 {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .formEdit {
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+  }
+  .form-label {
+    margin-left: 0px;
+  }
+  .sizeIP3,
+  .sizeIP4 {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 70% !important;
+    height: 30px !important;
+    font-size: 12px !important;
+    padding: 0px 0px 0px 10px !important;
+  }
+  .bt-addremove2 {
+    padding: 0px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 5px !important;
+    font-size: 10px !important;
+  }
+  .bt-submitll {
+    width: 100% !important;
+    height: 40px !important;
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,37 @@
+.pic-link {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  height: auto;
+}
+.text-link2 {
+  padding: 10px !important;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #143c6d;
+}
+.text-link2:hover {
+  font-weight: bolder;
+  color: #9c1537;
+}
+a:hover {
+  text-decoration-line: none;
+}
+.text-box {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 0 0 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 850px) {
+  .text-link2 {
+    padding: 3px !important;
+    font-size: 5px;
+  }
+  .text-box {
+    width: auto;
+    float: none;
+    margin-right: 0;
+  }
+}

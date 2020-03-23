@@ -1,0 +1,186 @@
+.box-manual {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 280px;
+  box-shadow: 0px 4px 8px 8px rgba(187, 187, 187, 0.2);
+  transition: all 0.5s ease-in;
+}
+.box-manual:hover {
+  background-color: #6dd8eb;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.adminRow3 {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.image-manual1 {
+  transition: 0.4s ease;
+  height: 110px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.image-manual2 {
+  transition: 0.4s ease;
+  height: 110px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.image-manual2:hover {
+  transition: 0.4s ease;
+  height: 125px;
+}
+.image-manual1:hover {
+  transition: 0.4s ease;
+  height: 125px;
+}
+.link-manual {
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgb(6, 102, 167);
+}
+.link-manual:hover {
+  color: rgb(1, 43, 83);
+}
+.manual-page {
+  word-break: break-word;
+  margin-bottom: 55px;
+}
+.text-MN {
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.text-step {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.click-here {
+  font-weight: bolder;
+  color: rgb(24, 61, 184);
+}
+.click-here:hover {
+  color: rgb(3, 135, 211);
+}
+.line-pic {
+  width: 1200px;
+}
+.platfrom-line {
+  font-size: 16px;
+}
+.text-open {
+  margin-right: 150px;
+}
+.text-line1 {
+  margin-right: 80px;
+}
+.text-line2 {
+  margin-right: 20px;
+}
+.text-line3 {
+  margin-right: 20px;
+}
+.text-line4 {
+  margin-right: 35px;
+}
+.text-close1 {
+  margin-right: 100px;
+}
+.text-close2 {
+  margin-right: 140px;
+}
+.formbig-image {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+.platform-image {
+  text-align: start;
+  font-size: 16px;
+}
+.descriptions {
+  color: rgb(21, 83, 177);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.text-line {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 980px) {
+  .box-manual {
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .manual-page {
+    margin-bottom: 40px;
+  }
+  .image-manual1 {
+    height: 70px;
+    margin-bottom: 5px;
+  }
+  .image-manual2 {
+    height: 70px;
+    margin-bottom: 5px;
+  }
+  .image-manual2:hover {
+    height: 80px;
+  }
+  .image-manual1:hover {
+    height: 80px;
+  }
+  .text-manual {
+    font-size: 12px;
+  }
+  .text-MN {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .text-step {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .line-pic {
+    width: 300px;
+  }
+  .platform-line {
+    font-size: 10px;
+  }
+  .text-open {
+    margin-right: 130px;
+  }
+  .text-close2 {
+    margin-right: 125px;
+  }
+  .platform-image {
+    font-size: 10px;
+  }
+  .formbig-image {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+  .descriptions {
+    font-size: 11px;
+  }
+  .text-line {
+    margin-left: 15px;
+  }
+}
