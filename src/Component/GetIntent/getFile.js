@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
     Col,
     Row,
-    Input
+    Input,
+    Button
 } from "reactstrap";
 import _ from 'lodash';
 import ShowMore from 'react-show-more';
@@ -13,14 +14,19 @@ import Firebase from 'firebase';
 import auth from "../Admin/firebase";
 import NavAdmin from '../Admin/NavAdmin';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import GoogleLogin from 'react-google-login';
+import Google from '../../Image/google.png'
+const INTENT_ID = 'projects/hello-fftkec/agent';
 class getFile extends Component {
     constructor(props) {
         super(props);
         this.state = {
             intents: [],
+            intent: [],
             isloading: false,
             messages: [],
-            search: ''
+            search: '',
+            accessToken: "",
         };
     }
 
@@ -60,6 +66,7 @@ class getFile extends Component {
                     answer.push(JSON.stringify(item.messages[0].image))
                 }
             }
+            return null;
         })
         this.setState({ messages: this.setForm(keys, display, keyword, answer), isloading: true })
     }
@@ -68,6 +75,27 @@ class getFile extends Component {
         auth.onAuthStateChanged(user => {
             if (user) {
                 this.props.login(user)
+                const AccessToken = localStorage.getItem('token');
+                fetch(`https://dialogflow.googleapis.com/v2/${INTENT_ID}/intents?intentView=1`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${AccessToken}`
+                    },
+                })
+                    .then((response) => {
+                        const dataFrom = response.json()
+                        var p = Promise.resolve(dataFrom);
+                        p.then((v) => {
+                            let intent = v.intents
+                            this.setState({
+                                intent
+                            })
+                        })
+                    })
+                    .catch((error) => {
+                        console.warn(error);
+                    });
             } else {
                 this.props.history.push('/login')
             }
@@ -100,6 +128,19 @@ class getFile extends Component {
         })
     }
 
+    responseGoogle = (response) => {
+        const accessToken = response.uc.access_token
+        this.setState({
+            accessToken
+        })
+        localStorage.setItem('token', this.state.accessToken);
+    }
+
+    sendToFire = () => {
+        Firebase.database().ref('intent').set(this.state.intent);
+        alert("Send data to firebase complete!!")
+    }
+
     render() {
         const { messages } = this.state;
         let width = window.innerWidth;
@@ -119,6 +160,19 @@ class getFile extends Component {
                                     <div className="text-cont-pageadmin2">
                                         <center>
                                             <h1 className="textFA">Intent</h1>
+                                            <div className="btgoogle">
+                                                <Button color="danger" className="sendfire" onClick={this.sendToFire}><FontAwesomeIcon className="icon-nav fa-fw" icon="cloud-upload-alt" /></Button>
+                                                <GoogleLogin
+                                                    clientId="447293745396-oua1mfd55s4oqfks5f4vdmvfb1fmgji9.apps.googleusercontent.com"
+                                                    scope="https://www.googleapis.com/auth/dialogflow"
+                                                    onSuccess={this.responseGoogle}
+                                                    onFailure={this.responseGoogle}
+                                                    render={renderProps => (
+                                                        <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="googlebt"><span><img className="picgoogle" src={Google} alt="Google" /></span></button>
+                                                    )}
+                                                    buttonText=""
+                                                />
+                                            </div>
                                             <div>
                                                 <Input
                                                     className="sizeSearch"

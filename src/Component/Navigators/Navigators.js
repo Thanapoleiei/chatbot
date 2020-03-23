@@ -36,7 +36,8 @@ import {
   faFileDownload,
   faTrashAlt,
   faBookReader,
-  faFileCode
+  faFileCode,
+  faCloudUploadAlt
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faSignInAlt,
@@ -60,7 +61,8 @@ library.add(
   faFileDownload,
   faTrashAlt,
   faBookReader,
-  faFileCode
+  faFileCode,
+  faCloudUploadAlt
 );
 
 class Navigators extends Component {
