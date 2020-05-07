@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import {
-    Button, Form, Row, Col, Container
+    Button, Form, Row, Col, Container,
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter
 } from "reactstrap";
 import auth from "../Admin/firebase";
 import Firebase from 'firebase';
@@ -21,7 +25,8 @@ class editData extends Component {
             dataQuestion: [],
             dataAnswer: [],
             dataKeys: '',
-            message: ""
+            message: "",
+            modal: false
         }
     }
 
@@ -86,10 +91,8 @@ class editData extends Component {
             let app = Firebase.database().ref(`/dataIntent/${this.state.dataKeys}`);
             app.update({
                 dataMG: {
-                    id: Math.floor((Math.random() * 99) + 1) + "abdec" + Math.floor((Math.random() * 9999) + 1) + "acebd" + Math.floor((Math.random() * 9999) + 1) + "aefdbc" + Math.floor((Math.random() * 999) + 1),
+                    id: Math.floor((Math.random() * 9999) + 1) + "abde-" + Math.floor((Math.random() * 99) + 1) + "ac-" + Math.floor((Math.random() * 999) + 1) + "b-" + Math.floor((Math.random() * 99) + 1) + "tw-" + Math.floor((Math.random() * 99) + 1) + "ds" + Math.floor((Math.random() * 9999) + 1) + "dfds",
                     name: this.refs.name.value,
-                    auto: true,
-                    contexts: [],
                     responses: [{
                         resetContexts: false,
                         affectedContexts: [],
@@ -124,7 +127,6 @@ class editData extends Component {
                 },
                 date: this.state.datestring,
             });
-            alert("Submit Successful!!")
             window.location.reload()
         } else if (rexThai.test(this.refs.name.value)) {
             this.setState({
@@ -137,7 +139,7 @@ class editData extends Component {
         const newuserSays = this.state.dataQuestion.map((userSay, sidx) => {
             if (idx !== sidx) return userSay;
             return {
-                ...userSay, id: Math.floor((Math.random() * 99) + 1) + "abdec" + Math.floor((Math.random() * 9999) + 1) + "acebd" + Math.floor((Math.random() * 9999) + 1) + "aefdbc" + Math.floor((Math.random() * 999) + 1),
+                ...userSay, id: "b" + Math.floor((Math.random() * 99999) + 1) + "a" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 99) + 1) + "f" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 9) + 1) + "dd" + Math.floor((Math.random() * 9) + 1) + "-a" + Math.floor((Math.random() * 9) + 1) + "f" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 999) + 1) + "ee" + Math.floor((Math.random() * 99) + 1) + "f" + Math.floor((Math.random() * 99) + 1) + "a" + Math.floor((Math.random() * 9) + 1),
                 data: [
                     {
                         text: evt.target.value,
@@ -180,7 +182,7 @@ class editData extends Component {
             dataQuestion: [
                 ...this.state.dataQuestion,
                 {
-                    id: Math.floor((Math.random() * 99) + 1) + "abdec" + Math.floor((Math.random() * 9999) + 1) + "acebd" + Math.floor((Math.random() * 9999) + 1) + "aefdbc" + Math.floor((Math.random() * 999) + 1),
+                    id: "b" + Math.floor((Math.random() * 99999) + 1) + "a" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 99) + 1) + "f" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 9) + 1) + "dd" + Math.floor((Math.random() * 9) + 1) + "-a" + Math.floor((Math.random() * 9) + 1) + "f" + Math.floor((Math.random() * 9) + 1) + "-" + Math.floor((Math.random() * 999) + 1) + "ee" + Math.floor((Math.random() * 99) + 1) + "f" + Math.floor((Math.random() * 99) + 1) + "a" + Math.floor((Math.random() * 9) + 1),
                     data: [
                         {
                             text: "",
@@ -247,6 +249,24 @@ class editData extends Component {
             return false
         }
     }
+
+    toggle = () => {
+        var rex = /([a-zA-Z])+/g
+        var rexThai = /([ก-๑])+/
+        if (this.refs.name.value === "") {
+            this.setState({
+                message: "กรุณากรอกข้อมูลให้ครบสมบูรณ์"
+            })
+        } else if (rex.test(this.refs.name.value) && !rexThai.test(this.refs.name.value)) {
+            this.setState({
+                modal: !this.state.modal
+            })
+        } else if (rexThai.test(this.refs.name.value)) {
+            this.setState({
+                message: "กรุณาใช้ Name Intent ภาษาอังกฤษเท่านั้น"
+            })
+        }
+    };
 
     render() {
         const { message } = this.state
@@ -319,8 +339,16 @@ class editData extends Component {
                                             }
                                             <hr />
                                             {message ? <p className="help3">{message}</p> : null}
-                                            <Button className="bt-submitll" color="warning" onClick={this.klikPost}>Submit</Button>
+                                            <Button className="bt-submitll" color="warning" onClick={this.toggle}>Submit</Button>
                                         </Form>
+                                        <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                                            <ModalHeader toggle={this.toggle}><span style={{ fontWeight: "bolder" }}>Update Intent</span></ModalHeader>
+                                            <ModalBody> คุณต้องการอัปเดตข้อมูลใน Intent หรือไม่ ? </ModalBody>
+                                            <ModalFooter>
+                                                <Button color="primary" onClick={this.klikPost}>Yes</Button>
+                                                <Button color="danger" onClick={this.toggle}>No</Button>
+                                            </ModalFooter>
+                                        </Modal>
                                     </Col>
                                 </Row>
                             </Container>

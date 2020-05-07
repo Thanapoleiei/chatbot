@@ -16,7 +16,7 @@ import NavAdmin from '../Admin/NavAdmin';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GoogleLogin from 'react-google-login';
 import Google from '../../Image/google.png'
-const INTENT_ID = 'projects/hello-fftkec/agent';
+const INTENT_ID = 'projects/chatbotmali/agent';
 class getFile extends Component {
     constructor(props) {
         super(props);
@@ -163,7 +163,7 @@ class getFile extends Component {
                                             <div className="btgoogle">
                                                 <Button color="danger" className="sendfire" onClick={this.sendToFire}><FontAwesomeIcon className="icon-nav fa-fw" icon="cloud-upload-alt" /></Button>
                                                 <GoogleLogin
-                                                    clientId="447293745396-oua1mfd55s4oqfks5f4vdmvfb1fmgji9.apps.googleusercontent.com"
+                                                    clientId="93654011742-53uq0rfatn6bdvmtqlsq57dteljp3s4g.apps.googleusercontent.com"
                                                     scope="https://www.googleapis.com/auth/dialogflow"
                                                     onSuccess={this.responseGoogle}
                                                     onFailure={this.responseGoogle}
