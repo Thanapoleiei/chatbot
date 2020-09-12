@@ -16,7 +16,7 @@ import NavAdmin from '../Admin/NavAdmin';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GoogleLogin from 'react-google-login';
 import Google from '../../Image/google.png'
-const INTENT_ID = 'projects/chatbotmali/agent';
+const INTENT_ID = 'projects/ockock-rjjlqc/agent';
 class getFile extends Component {
     constructor(props) {
         super(props);
