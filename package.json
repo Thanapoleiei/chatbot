@@ -52,7 +52,7 @@
     "redux-thunk": "^2.3.0",
     "reload": "^2.4.0",
     "styled-components": "^4.4.1",
-    "trim": "0.0.1"
+    "trim": "0.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
